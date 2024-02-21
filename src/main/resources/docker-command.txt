@@ -1,0 +1,9 @@
+docker build . -t aseem9008/demo:d1
+
+docker images
+
+docker inspect images <imageid>
+
+docker run -p 8080:8080 aseem9008/demo:d1
+
+docker run -p <external>:<intenal> aseem9008/demo:d1
