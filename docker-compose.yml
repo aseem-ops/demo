@@ -1,0 +1,15 @@
+services:
+  demo:
+    image: "aseem9008/demo:d1"
+    container_name: demo-ms
+    ports:
+      - 8080:8080
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - bmo
+networks:
+  bmo:
+    driver: "bridge"
